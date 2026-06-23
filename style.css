@@ -1,0 +1,36 @@
+body{
+background:#081b08;
+color:#33ff33;
+font-family:Courier New, monospace;
+margin:0;
+padding:20px;
+text-shadow:0 0 5px #33ff33;
+}
+.terminal{
+border:2px solid #33ff33;
+padding:20px;
+margin-bottom:20px;
+background:rgba(0,0,0,.35);
+box-shadow:0 0 15px #33ff33;
+}
+h1,h2{text-align:center;}
+.player{text-align:center;margin:20px 0;}
+audio{width:100%;max-width:600px;}
+.crt{
+pointer-events:none;
+position:fixed;
+inset:0;
+background:repeating-linear-gradient(
+0deg,
+rgba(255,255,255,0.03),
+rgba(255,255,255,0.03) 2px,
+transparent 2px,
+transparent 4px
+);
+}
+@keyframes flicker{
+0%{opacity:.95;}
+50%{opacity:1;}
+100%{opacity:.96;}
+}
+body{animation:flicker .15s infinite;}
